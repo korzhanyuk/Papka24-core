@@ -139,7 +139,7 @@ var actionLogin = {
             grecaptcha.reset(actionLogin.grecaptcha);
         } else {
             actionLogin.grecaptcha = grecaptcha.render("captcha", {
-                sitekey:"6LdHERcTAAAAAGhYNorYFJAtkLjzbyAGo92SAsfH",
+                sitekey:"6LcDkUcUAAAAAPJU2dqpRPlQ1RTkdLMRd-Qf8sVG",
                 callback: function () {
                     if (typeof actionLogin.recaptchaCallback == "function") {
                         actionLogin.recaptchaCallback();
