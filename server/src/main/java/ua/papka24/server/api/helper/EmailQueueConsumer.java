@@ -105,7 +105,7 @@ public class EmailQueueConsumer implements Runnable {
                     transport.setRequireStartTLS(true);
                     transport.setStartTLS(true);
                 }
-                transport.connect(prop.getProperty("mail.smtp.host"), prop.getProperty("email.user"), prop.getProperty("email.password"));
+                transport.connect();
                 try {
                     while (transport.isConnected() && (emailDTO = queue.poll()) != null) {
                         MimeMessage msg = new MimeMessage(session);
