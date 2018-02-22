@@ -89,7 +89,7 @@ public class EmailQueueConsumer implements Runnable {
         }
         prop.setProperty("mail.smtp.host", emailServer);
         prop.put("mail.smtp.socketFactory.port", emailPort);
-        prop.put("mail.smtp.auth", auth);
+        prop.put("mail.smtp.auth", "false");
         prop.put("mail.smtp.port", emailPort);
         prop.put("mail.smtp.starttls.enable", startTlsRequired);
         return prop;
