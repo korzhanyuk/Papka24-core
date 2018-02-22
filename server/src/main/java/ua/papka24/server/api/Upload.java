@@ -70,6 +70,7 @@ public class Upload implements HttpHandler {
     @Override
     public void handle(HttpExchange t) throws IOException {
         boolean multipart = false;
+        log.warn("AAAAAAAAerror working with");
         if (!t.getRequestHeaders().containsKey("sessionid")) {
             while (t.getRequestBody().read() != -1) {
             }
