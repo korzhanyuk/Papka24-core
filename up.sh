@@ -59,7 +59,7 @@ then
   # postgres
   cp ./server/build/resources/main/sql/CreateDB.sql ./devops/postgres/dist
 
-  sudo docker-compose up $1
+  sudo docker-compose up --build $1
 
 else
   echo "'$envFile' not found."
